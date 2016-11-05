@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CAT4101
+D 1 A Constant-Current LED Driver with PWM Dimming
+$ENDCMP
+#
+#End Doc Library
