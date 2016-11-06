@@ -1,0 +1,201 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:i2c
+LIBS:n39
+LIBS:driver-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "6 nov 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CAT4101 U1
+U 1 1 581E689D
+P 3800 3300
+F 0 "U1" H 3500 2900 60  0000 C CNN
+F 1 "CAT4101" H 3750 4000 60  0000 C CNN
+F 2 "" H 3750 4000 60  0000 C CNN
+F 3 "" H 3750 4000 60  0000 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 581E68C9
+P 3800 2000
+F 0 "#PWR01" H 3800 2100 30  0001 C CNN
+F 1 "VCC" H 3800 2100 30  0000 C CNN
+F 2 "" H 3800 2000 60  0000 C CNN
+F 3 "" H 3800 2000 60  0000 C CNN
+	1    3800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 581E68D8
+P 3800 4250
+F 0 "#PWR02" H 3800 4250 30  0001 C CNN
+F 1 "GND" H 3800 4180 30  0001 C CNN
+F 2 "" H 3800 4250 60  0000 C CNN
+F 3 "" H 3800 4250 60  0000 C CNN
+	1    3800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 581E69D0
+P 4400 2500
+F 0 "C1" H 4400 2600 40  0000 L CNN
+F 1 "100n" H 4406 2415 40  0000 L CNN
+F 2 "~" H 4438 2350 30  0000 C CNN
+F 3 "~" H 4400 2500 60  0000 C CNN
+	1    4400 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 581E730F
+P 3000 3700
+F 0 "R1" V 3080 3700 40  0000 C CNN
+F 1 "549R" V 3007 3701 40  0000 C CNN
+F 2 "~" V 2930 3700 30  0000 C CNN
+F 3 "~" H 3000 3700 30  0000 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+Text Label 4550 3200 0    60   ~ 0
+LED
+Text Label 3100 3200 2    60   ~ 0
+PWM
+$Comp
+L GND #PWR03
+U 1 1 581F298E
+P 4800 2700
+F 0 "#PWR03" H 4800 2700 30  0001 C CNN
+F 1 "GND" H 4800 2630 30  0001 C CNN
+F 2 "" H 4800 2700 60  0000 C CNN
+F 3 "" H 4800 2700 60  0000 C CNN
+	1    4800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_5 P1
+U 1 1 581F29E5
+P 950 3200
+F 0 "P1" V 900 3200 50  0000 C CNN
+F 1 "CONN_5" V 1000 3200 50  0000 C CNN
+F 2 "" H 950 3200 60  0000 C CNN
+F 3 "" H 950 3200 60  0000 C CNN
+	1    950  3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 2700 3800 2000
+Connection ~ 3800 2500
+Wire Wire Line
+	3250 3450 3000 3450
+Wire Wire Line
+	3250 3200 3100 3200
+Wire Wire Line
+	4350 3200 4550 3200
+Wire Wire Line
+	3800 2500 4200 2500
+Wire Wire Line
+	4600 2500 4800 2500
+Wire Wire Line
+	4800 2500 4800 2700
+Wire Wire Line
+	1350 3000 1550 3000
+Wire Wire Line
+	1350 3100 2000 3100
+Wire Wire Line
+	1350 3200 1850 3200
+Wire Wire Line
+	1350 3300 2000 3300
+Wire Wire Line
+	1350 3400 1550 3400
+$Comp
+L GND #PWR04
+U 1 1 581F2A7E
+P 2000 3600
+F 0 "#PWR04" H 2000 3600 30  0001 C CNN
+F 1 "GND" H 2000 3530 30  0001 C CNN
+F 2 "" H 2000 3600 60  0000 C CNN
+F 3 "" H 2000 3600 60  0000 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 581F2A84
+P 1850 3500
+F 0 "#PWR05" H 1850 3600 30  0001 C CNN
+F 1 "VCC" H 1850 3600 30  0000 C CNN
+F 2 "" H 1850 3500 60  0000 C CNN
+F 3 "" H 1850 3500 60  0000 C CNN
+	1    1850 3500
+	-1   0    0    1   
+$EndComp
+Text Label 1550 3000 0    60   ~ 0
+LED
+Text Label 1550 3400 0    60   ~ 0
+PWM
+Wire Wire Line
+	2000 3100 2000 3600
+Connection ~ 2000 3300
+Wire Wire Line
+	1850 3200 1850 3500
+$Comp
+L GND #PWR06
+U 1 1 581F2AF4
+P 3000 4250
+F 0 "#PWR06" H 3000 4250 30  0001 C CNN
+F 1 "GND" H 3000 4180 30  0001 C CNN
+F 2 "" H 3000 4250 60  0000 C CNN
+F 3 "" H 3000 4250 60  0000 C CNN
+	1    3000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3800 3800 4250
+Wire Wire Line
+	3000 3950 3000 4250
+$EndSCHEMATC
