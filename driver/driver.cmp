@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Sun 06 Nov 2016 02:07:47 PM CET
+
+BeginCmp
+TimeStamp = /581E69D0;
+Reference = C1;
+ValeurCmp = 10n;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /581F29E5;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = SIL-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /581E730F;
+Reference = R1;
+ValeurCmp = 549R;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /581E689D;
+Reference = U1;
+ValeurCmp = CAT4101;
+IdModule  = TO263-5;
+EndCmp
+
+EndListe
